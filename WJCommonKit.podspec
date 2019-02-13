@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
 
   spec.author             = { "RuanYunKeji" => "2391288572@qq.com" }
   
-  spec.platform     = :ios, "5.0"
+  spec.platform     = :ios, "9.0"
 
   spec.source       = { :git => "https://github.com/18225905675/WJCommonKit.git", :tag =>spec.version }
   spec.source_files  = "Classes/**/*.{h,m}"
