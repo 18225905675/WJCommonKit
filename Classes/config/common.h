@@ -9,6 +9,9 @@
 #ifndef common_h
 #define common_h
 
+#import "commonDefine.h"
+
 #import <Masonry/Masonry.h>
+#import <QMUIKit/QMUIKit.h>
 
 #endif /* common_h */

@@ -8,6 +8,18 @@
 
 #import "BaseModel.h"
 
+@implementation BaseModelType
+
+setClassMethod(BaseModelType *, NSInteger, type, setType) {
+    weak(self, weakSelf);
+    return ^BaseModelType *(NSInteger type){
+        weakSelf.type = type;
+        return weakSelf;
+    };
+}
+
+@end
+
 @implementation BaseModel
 
 setClassMethod(BaseModel *, NSString *, title, setTitle) {
@@ -22,6 +34,22 @@ setClassMethod(BaseModel *, NSString *, des, setDes) {
     weak(self, weakSelf);
     return [self setBase:^BaseModel *(NSString *des) {
         weakSelf.des = des;
+        return weakSelf;
+    }];
+}
+
+setClassMethod(BaseModel *, UIFont *, titleFont, setTitleFont) {
+    weak(self, weakSelf);
+    return [self setBase:^BaseModel *(UIFont *titleFont) {
+        weakSelf.titleFont = titleFont;
+        return weakSelf;
+    }];
+}
+
+setClassMethod(BaseModel *, UIFont *, desFont, setDesFont) {
+    weak(self, weakSelf);
+    return [self setBase:^BaseModel *(UIFont *desFont) {
+        weakSelf.desFont = desFont;
         return weakSelf;
     }];
 }

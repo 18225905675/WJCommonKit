@@ -11,20 +11,27 @@
 
 @interface BaseModelType : NSObject
 
+@property (nonatomic, assign) NSInteger type;
+setClassMethod(BaseModelType *, NSInteger, type, setType);
+
 @end
 
 @interface BaseModel : NSObject
 
 @property (nonatomic, copy) NSString *title;
-@property (nonatomic, copy) NSString *des;
+@property (nonatomic, strong) UIFont *titleFont;
 @property (nonatomic, strong) UIColor *titleColor;
+@property (nonatomic, copy) NSString *des;
 @property (nonatomic, strong) UIColor *desColor;
+@property (nonatomic, strong) UIFont *desFont;
 @property (nonatomic, assign) SEL selector;
 @property (nonatomic, copy) NSString *imageName;
 @property (nonatomic, assign) NSInteger type;
 
 setClassMethod(BaseModel *, NSString *, title, setTitle);
 setClassMethod(BaseModel *, NSString *, des, setDes);
+setClassMethod(BaseModel *, UIFont *, titleFont, setTitleFont);
+setClassMethod(BaseModel *, UIFont *, desFont, setDesFont);
 setClassMethod(BaseModel *, UIColor *, titleColor, setTitleColor);
 setClassMethod(BaseModel *, UIColor *, desColor, setDesColor);
 setClassMethod(BaseModel *, SEL, selector, setSelector);
