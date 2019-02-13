@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = "CommonKit"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "通用框架"
   spec.homepage     = "https://github.com/18225905675/CommonKit"
  
