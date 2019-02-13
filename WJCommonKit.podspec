@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = "WJCommonKit"
-  spec.version      = "0.0.6"
+  spec.version      = "1.2.0"
   spec.summary      = "通用框架"
   spec.homepage     = "https://github.com/18225905675/WJCommonKit"
  
@@ -26,4 +26,5 @@ Pod::Spec.new do |spec|
   spec.dependency "Masonry"
   spec.dependency "WRNavigationBar"
   spec.dependency "QMUIKit"
+
 end
