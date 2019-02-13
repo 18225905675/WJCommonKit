@@ -23,4 +23,5 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/18225905675/CommonKit.git", :tag =>spec.version }
   spec.source_files  = "Classes/*.{h,m}"
   spec.requires_arc = true
+  spec.dependency "Masory", "~> 1.1.0"
 end
