@@ -23,8 +23,9 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/18225905675/WJCommonKit.git", :tag =>spec.version }
   spec.source_files  = "Classes/**/*.{h,m}"
   spec.requires_arc = true
-  spec.dependency "Masonry"
-  spec.dependency "WRNavigationBar"
-  spec.dependency "QMUIKit"
+  spec.dependency "Masonry", "~> 1.1.0"
+  spec.dependency "WRNavigationBar", "~> 1.2.0"
+  spec.dependency "QMUIKit", "~> 3.1.1"
+
 
 end
