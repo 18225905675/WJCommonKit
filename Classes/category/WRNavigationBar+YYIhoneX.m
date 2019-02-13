@@ -7,6 +7,7 @@
 //
 
 #import "WRNavigationBar+YYIhoneX.h"
+#import <objc/runtime.h>
 
 @implementation WRNavigationBar (YYIhoneX)
 
