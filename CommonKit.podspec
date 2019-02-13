@@ -9,10 +9,10 @@
 Pod::Spec.new do |spec|
 
 
-  spec.name         = "CommonKit"
-  spec.version      = "0.0.2"
+  spec.name         = "commonKit"
+  spec.version      = "0.0.3"
   spec.summary      = "通用框架"
-  spec.homepage     = "https://github.com/18225905675/CommonKit"
+  spec.homepage     = "https://github.com/18225905675/commonKit"
  
   spec.license      = "MIT"
 
@@ -20,7 +20,7 @@ Pod::Spec.new do |spec|
   
   spec.platform     = :ios, "5.0"
 
-  spec.source       = { :git => "https://github.com/18225905675/CommonKit.git", :tag =>spec.version }
+  spec.source       = { :git => "https://github.com/18225905675/commonKit.git", :tag =>spec.version }
   spec.source_files  = "Classes/*.{h,m}"
   spec.requires_arc = true
   spec.dependency "Masonry", "~> 1.1.0"
