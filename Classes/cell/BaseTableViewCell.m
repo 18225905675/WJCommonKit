@@ -25,14 +25,14 @@
         self.photoImageView = [[UIImageView alloc] init];
         [self.contentView addSubview:self.photoImageView];
         [self.photoImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.mas_equalTo(KMAS_HORIZONTAL(50));
+            make.left.mas_equalTo(KMAS_HORIZONTAL_3X(50));
             make.centerY.mas_equalTo(0);
         }];
         
         self.titleLabel = [[UILabel alloc] init];
         [self.contentView addSubview:self.titleLabel];
         [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.mas_equalTo(self.photoImageView.mas_right).offset(KMAS_HORIZONTAL(30));
+            make.left.mas_equalTo(self.photoImageView.mas_right).offset(KMAS_HORIZONTAL_3X(30));
             make.centerY.mas_equalTo(0);
         }];
         
@@ -47,7 +47,7 @@
         self.desLabel = [[UILabel alloc] init];
         [self.contentView addSubview:self.desLabel];
         [self.desLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.right.mas_equalTo(-KMAS_HORIZONTAL(50));
+            make.right.mas_equalTo(-KMAS_HORIZONTAL_3X(50));
             make.centerY.mas_equalTo(0);
         }];
     }

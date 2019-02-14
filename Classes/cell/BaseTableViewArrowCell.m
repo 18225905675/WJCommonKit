@@ -16,12 +16,12 @@
         self.arrowImageView = [[UIImageView alloc] init];
         [self.contentView addSubview:self.arrowImageView];
         [self.arrowImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.right.mas_equalTo(-KMAS_HORIZONTAL(30));
+            make.right.mas_equalTo(-KMAS_HORIZONTAL_3X(30));
             make.centerY.mas_equalTo(0);
         }];
         
         [self.desLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
-            make.right.mas_equalTo(self.arrowImageView.mas_left).offset(KMAS_HORIZONTAL(30));
+            make.right.mas_equalTo(self.arrowImageView.mas_left).offset(KMAS_HORIZONTAL_3X(30));
             make.centerY.mas_equalTo(0);
         }];
     }
