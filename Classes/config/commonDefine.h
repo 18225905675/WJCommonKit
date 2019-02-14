@@ -16,16 +16,23 @@
 
 //适配文字大小
 #define SYSTEMFONT(FONTSIZE)     [UIFont systemFontOfSize:FONTSIZE]
-#define AUTOLAYOUTSYSTEMFONT(x)   SYSTEMFONT((x) *([[UIScreen mainScreen] bounds].size.width/414.f))
+#define AUTOLAYOUTSYSTEMFONT_3X(x)   SYSTEMFONT((x) *([[UIScreen mainScreen] bounds].size.width/414.f))
+#define AUTOLAYOUTSYSTEMFONT_2X(x)   SYSTEMFONT((x) *([[UIScreen mainScreen] bounds].size.width/375.f))
 
 /** 列表式适配。比例宽度计算。(No Use Masonry) */
-#define AUTOLAYOUTWIDTH(x) (x)*(KSCREENW/1242.f)
+#define AUTOLAYOUTWIDTH_3X(x) (x)*(KSCREENW/1242.f)
+#define AUTOLAYOUTWIDTH_2X(x) (x)*(KSCREENW/750.f)
 
 /** Constraint适配。横向上的比例偏移计算。(Use Masonry) */
-#define KMAS_HORIZONTAL(x) (x)/3.f
+#define KMAS_HORIZONTAL_3X(x) (x)/3.f
+#define KMAS_HORIZONTAL_2X(x) (x)/2.f
+
 /** Constraint适配。纵向上的比例偏移数据。(Use Masonry) */
-#define KMAS_VERTICAL(x) (x)/3.f
-#define KMAS_FONT(x) [UIFont systemFontOfSize:(x)/3.f]
+#define KMAS_VERTICAL_3X(x) (x)/3.f
+#define KMAS_VERTICAL_2X(x) (x)/2.f
+
+#define KMAS_FONT_3X(x) [UIFont systemFontOfSize:(x)/3.f]
+#define KMAS_FONT_2X(x) [UIFont systemFontOfSize:(x)/2.f]
 
 #ifdef DEBUG
 #define KLog(...) NSLog(__VA_ARGS__)
