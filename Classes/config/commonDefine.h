@@ -16,8 +16,8 @@
 
 //适配文字大小
 #define SYSTEMFONT(FONTSIZE)     [UIFont systemFontOfSize:FONTSIZE]
-#define AUTOLAYOUTSYSTEMFONT_3X(x)   SYSTEMFONT((x) *([[UIScreen mainScreen] bounds].size.width/414.f))
-#define AUTOLAYOUTSYSTEMFONT_2X(x)   SYSTEMFONT((x) *([[UIScreen mainScreen] bounds].size.width/375.f))
+#define AUTOLAYOUTSYSTEMFONT_3X(x)   SYSTEMFONT((x) *([[UIScreen mainScreen] bounds].size.width/1242.f))
+#define AUTOLAYOUTSYSTEMFONT_2X(x)   SYSTEMFONT((x) *([[UIScreen mainScreen] bounds].size.width/750.f))
 
 /** 列表式适配。比例宽度计算。(No Use Masonry) */
 #define AUTOLAYOUTWIDTH_3X(x) (x)*(KSCREENW/1242.f)
