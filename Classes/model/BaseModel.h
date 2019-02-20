@@ -36,6 +36,7 @@ setClassMethod(BaseModel *, UIColor *, titleColor, setTitleColor);
 setClassMethod(BaseModel *, UIColor *, desColor, setDesColor);
 setClassMethod(BaseModel *, SEL, selector, setSelector);
 setClassMethod(BaseModel *, NSString *, imageName, setImageName);
+setClassMethod(BaseModel *, NSInteger, type, setType);
 
 - (BaseModel *(^)(id value))setBase:(BaseModel *(^)(id value))block;
 

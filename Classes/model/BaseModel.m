@@ -30,6 +30,14 @@ setClassMethod(BaseModel *, NSString *, title, setTitle) {
     }];
 }
 
+setClassMethod(BaseModel *, NSInteger, type, setType) {
+    weak(self, weakSelf);
+    return [self setBase:^BaseModel *(NSInteger type) {
+        weakSelf.type = type;
+        return weakSelf;
+    }];
+}
+
 setClassMethod(BaseModel *, NSString *, des, setDes) {
     weak(self, weakSelf);
     return [self setBase:^BaseModel *(NSString *des) {
