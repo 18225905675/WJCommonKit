@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = "WJCommonKit"
-  spec.version      = "3.2.0"
+  spec.version      = "3.2.1"
   spec.summary      = "通用框架"
   spec.homepage     = "https://github.com/18225905675/WJCommonKit"
  
