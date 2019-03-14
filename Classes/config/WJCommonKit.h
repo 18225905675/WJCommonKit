@@ -7,5 +7,6 @@
 #import "NSString+URLEncoding.h"
 #import "UIButton+BackgroundColor.h"
 #import "UIButton+TouchAreaInsets.h"
+#import "NSString+Decimal.h"
 
 #endif /* WJCommonKit_h */
