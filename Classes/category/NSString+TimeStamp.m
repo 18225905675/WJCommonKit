@@ -13,7 +13,7 @@
 + (NSString *)getCurrentTimeStamp {
     NSDate *date = [NSDate date];
     NSTimeInterval time = [date timeIntervalSince1970];
-    return [NSString stringWithFormat:@"%ld", (long)[[NSNumber numberWithDouble:time * 1000] integerValue]];
+    return [NSString stringWithFormat:@"%ld", (long)[[NSNumber numberWithDouble:time * 1000] longLongValue]];
 }
 
 + (NSString *)timeWithTimeStamp:(NSString *)timeStamp {
