@@ -37,6 +37,13 @@ setClassMethod(BaseModel *, NSInteger, type, setType) {
     };
 }
 
+setClassMethod(BaseModel *, BOOL, hasLine, setHasLine) {
+    return ^BaseModel *(BOOL hasLine) {
+        self.hasLine = hasLine;
+        return self;
+    };
+}
+
 setClassMethod(BaseModel *, NSString *, des, setDes) {
     weak(self, weakSelf);
     return [self setBase:^BaseModel *(NSString *des) {

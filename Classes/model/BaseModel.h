@@ -27,6 +27,7 @@ setClassMethod(BaseModelType *, NSInteger, type, setType);
 @property (nonatomic, assign) SEL selector;
 @property (nonatomic, copy) NSString *imageName;
 @property (nonatomic, assign) NSInteger type;
+@property (nonatomic, assign) BOOL hasLine;
 
 setClassMethod(BaseModel *, NSString *, title, setTitle);
 setClassMethod(BaseModel *, NSString *, des, setDes);
@@ -37,6 +38,7 @@ setClassMethod(BaseModel *, UIColor *, desColor, setDesColor);
 setClassMethod(BaseModel *, SEL, selector, setSelector);
 setClassMethod(BaseModel *, NSString *, imageName, setImageName);
 setClassMethod(BaseModel *, NSInteger, type, setType);
+setClassMethod(BaseModel *, BOOL, hasLine, setHasLine);
 
 - (BaseModel *(^)(id value))setBase:(BaseModel *(^)(id value))block;
 
