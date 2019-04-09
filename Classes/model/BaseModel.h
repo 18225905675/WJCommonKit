@@ -29,16 +29,16 @@ setClassMethod(BaseModelType *, NSInteger, type, setType);
 @property (nonatomic, assign) NSInteger type;
 @property (nonatomic, assign) BOOL hasLine;
 
-setClassMethod(BaseModel *, NSString *, title, setTitle);
-setClassMethod(BaseModel *, NSString *, des, setDes);
-setClassMethod(BaseModel *, UIFont *, titleFont, setTitleFont);
-setClassMethod(BaseModel *, UIFont *, desFont, setDesFont);
-setClassMethod(BaseModel *, UIColor *, titleColor, setTitleColor);
-setClassMethod(BaseModel *, UIColor *, desColor, setDesColor);
-setClassMethod(BaseModel *, SEL, selector, setSelector);
-setClassMethod(BaseModel *, NSString *, imageName, setImageName);
-setClassMethod(BaseModel *, NSInteger, type, setType);
-setClassMethod(BaseModel *, BOOL, hasLine, setHasLine);
+setClassMethod(__kindof BaseModel *, NSString *, title, setTitle);
+setClassMethod(__kindof BaseModel *, NSString *, des, setDes);
+setClassMethod(__kindof BaseModel *, UIFont *, titleFont, setTitleFont);
+setClassMethod(__kindof BaseModel *, UIFont *, desFont, setDesFont);
+setClassMethod(__kindof BaseModel *, UIColor *, titleColor, setTitleColor);
+setClassMethod(__kindof BaseModel *, UIColor *, desColor, setDesColor);
+setClassMethod(__kindof BaseModel *, SEL, selector, setSelector);
+setClassMethod(__kindof BaseModel *, NSString *, imageName, setImageName);
+setClassMethod(__kindof BaseModel *, NSInteger, type, setType);
+setClassMethod(__kindof BaseModel *, BOOL, hasLine, setHasLine);
 
 - (BaseModel *(^)(id value))setBase:(BaseModel *(^)(id value))block;
 
